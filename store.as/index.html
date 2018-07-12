@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Online Store</title>
+	<link type="text/css" rel="stylesheet" href="css/style.css"  media="screen,projection"/>
+	<meta name="description" content="Online store">
+  	<meta name="keywords" content="Store">
+  	<meta charset="UTF-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  	<script type="text/javascript" src="js/function.js"></script>
+  	<script type="text/javascript" src="js/addmin.js"></script>
+  	<script type="text/javascript" src="js/jquery.js"></script>
+</head>
+<body>
+
+<div class="boxhref"><a href="index.html"><h1>Online Store</h1></a></div>
+<hr>
+<br>
+
+
+<!--https://www.w3schools.com/html/tryit.asp?filename=tryhtml_table_rowspan-->
+<div>
+	<table style="width:100%;color:white" bgcolor="#800000">
+		<th width="50%" style="text-align:center">
+			Name and decription of goods
+		</th>
+		<th width="15%" style="text-align:center">
+			Price
+		</th>
+		<th width="15%" style="text-align:center">
+			Quantity
+		</th>
+		<th width="20%" style="text-align:center">
+			Action
+		</th>
+	</table>
+</div>
+<br>
+<!--Shirt-->
+<div>
+	<table style="width:100%" bgcolor="#FFFFF0">
+		<td width="50%">
+			<div style="display:inline-block">		
+				<img src="img/1.jpg" alt="1.jpg" width="115" height="115">
+			</div>
+
+				<table style="display:inline-block; border: 0px; border-style: hidden;">
+					<tr style="border: 0px; border-style: hidden;">
+						<td>
+							<p>New shirt buy wth low price. Only today, and never again. Order!</p>
+						</td>
+					</tr>
+					<tr style="border: 0px; border-style: hidden;">
+						<td>
+							<p>Size:48, Made in China </p>
+						</td>
+					</tr>
+				</table>
+		</td>
+		<td width="15%" style="text-align:center">
+			$50
+		</td>
+		<td width="15%" style="text-align:center">
+			<!--Inctrement and decrement buttons-->
+			<form>
+  			<div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
+  			<input type="number" id="number" value="0" />
+  			<div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
+			</form>
+		</td>
+		<td width="20%" style="text-align:center">
+			<button id="btn1" value="50" onclick="myFunction(); countOrder(); countTotal()">Add to order</button>
+		</td>
+	</table>
+</div>
+<!--pants-->
+<br>
+<div>
+	<table style="width:100%" bgcolor="#FFFFF0">
+		<td width="50%">
+			<div style="display:inline-block">		
+				<img src="img/2.jpg" alt="2.jpg" width="115" height="115">
+			</div>
+
+				<table style="display:inline-block; border: 0px; border-style: hidden;">
+					<tr style="border: 0px; border-style: hidden;">
+						<td>
+							<p>New pants buy wth low price. Only today, and never again. Order!</p>
+						</td>
+					</tr>
+					<tr style="border: 0px; border-style: hidden;">
+						<td>
+							<p>Size:28, Made in China </p>
+						</td>
+					</tr>
+				</table>
+		</td>
+		<td width="15%" style="text-align:center">
+			$70
+		</td>
+		<td width="15%" style="text-align:center">
+			<!--Inctrement and decrement buttons-->
+			<form>
+  			<div class="value-button" id="decrease2" onclick="decreaseValue2()" value="Decrease Value">-</div>
+  			<input type="number" id="number2" value="0" />
+  			<div class="value-button" id="increase2" onclick="increaseValue2()" value="Increase Value">+</div>
+			</form>
+		</td>
+		<td width="20%" style="text-align:center">
+			<button id="btn2" value="70" onclick="myFunction2(); countOrder(); countTotal()" >Add to order</button>
+		</td>
+	</table>
+</div>
+<!--jacket-->
+<br>
+<div>
+	<table style="width:100%" bgcolor="#FFFFF0">
+		<td width="50%">
+			<div style="display:inline-block">		
+				<img src="img/3.jpg" alt="3.jpg" width="115" height="115">
+			</div>
+
+				<table style="display:inline-block; border: 0px; border-style: hidden;">
+					<tr style="border: 0px; border-style: hidden;">
+						<td>
+							<p>New jacket buy wth low price. Only today, and never again. Order!</p>
+						</td>
+					</tr>
+					<tr style="border: 0px; border-style: hidden;">
+						<td>
+							<p>Size:48, Made in China </p>
+						</td>
+					</tr>
+				</table>
+		</td>
+		<td width="15%" style="text-align:center">
+			$130
+		</td>
+		<td width="15%" style="text-align:center">
+			<!--Inctrement and decrement buttons-->
+			<form>
+  			<div class="value-button" id="decrease3" onclick="decreaseValue3()" value="Decrease Value">-</div>
+  			<input type="number" id="number3" value="0" />
+  			<div class="value-button" id="increase3" onclick="increaseValue3()" value="Increase Value">+</div>
+			</form>
+		</td>
+		<td width="20%" style="text-align:center">
+			<button id="btn3" value="130" onclick="myFunction3(); countOrder(); countTotal()" >Add to order</button>
+		</td>
+	</table>
+</div>
+<!--shoe-->
+<br>
+<div>
+	<table style="width:100%" bgcolor="#FFFFF0">
+		<td width="50%">
+			<div style="display:inline-block">		
+				<img src="img/4.jpg" alt="4.jpg" width="115" height="115">
+			</div>
+
+				<table style="display:inline-block; border: 0px; border-style: hidden;">
+					<tr style="border: 0px; border-style: hidden;">
+						<td>
+							<p>New shoes buy wth low price. Only today, and never again. Order!</p>
+						</td>
+					</tr>
+					<tr style="border: 0px; border-style: hidden;">
+						<td>
+							<p>Size:42, Made in China </p>
+						</td>
+					</tr>
+				</table>
+		</td>
+		<td width="15%" style="text-align:center">
+			$100
+		</td>
+		<td width="15%" style="text-align:center">
+			<!--Inctrement and decrement buttons-->
+			<form>
+  			<div class="value-button" id="decrease4" onclick="decreaseValue4()" value="Decrease Value">-</div>
+  			<input type="number" id="number4" value="0" />
+  			<div class="value-button" id="increase4" onclick="increaseValue4()" value="Increase Value">+</div>
+			</form>
+		</td>
+		<td width="20%" style="text-align:center">
+			<button id="btn4" value="100" onclick="myFunction4(); countOrder(); countTotal()" >Add to order</button>
+		</td>
+	</table>
+</div>
+<!--t-shirt-->
+<br>
+<div>
+	<table style="width:100%" bgcolor="#FFFFF0">
+		<td width="50%">
+			<div style="display:inline-block">		
+				<img src="img/5.jpg" alt="5.jpg" width="115" height="115">
+			</div>
+
+				<table style="display:inline-block; border: 0px; border-style: hidden;">
+					<tr style="border: 0px; border-style: hidden;">
+						<td>
+							<p>New t-shirt buy wth low price. Only today, and never again. Order!</p>
+						</td>
+					</tr>
+					<tr style="border: 0px; border-style: hidden;">
+						<td>
+							<p>Size:48, Made in China </p>
+						</td>
+					</tr>
+				</table>
+		</td>
+		<td width="15%" style="text-align:center">
+			$40
+		</td>
+		<td width="15%" style="text-align:center">
+			<!--Inctrement and decrement buttons-->
+			<form>
+  			<div class="value-button" id="decrease5" onclick="decreaseValue5()" value="Decrease Value">-</div>
+  			<input type="number" id="number5" value="0" />
+  			<div class="value-button" id="increase5" onclick="increaseValue5()" value="Increase Value">+</div>
+			</form>
+		</td>
+		<td width="20%" style="text-align:center">
+			<button id="btn5" value="40" onclick="myFunction5(); countOrder(); countTotal()" >Add to order</button>
+		</td>
+	</table>
+</div>
+
+<br><br>
+<br><br>
+<br><br>
+	<div class="footer">
+  	<p>My Order: The order price=$<span id="order">0</span> | The deliver price=$<span id="delivery">10</span> |
+  	Total price = $<span id="total">0</span></p>
+  	<button onclick="myDiscount()">I have discount</button>
+	</div>
+</body>
+</html>
